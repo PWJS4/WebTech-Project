@@ -33,5 +33,3 @@ if(user_result > chopper_result || score_result == 10){
     chopper_text.innerText = "I came I saw I conquered! I am indeed the smartest dinosaur!"; 
     $("#user_score").css("color", "red");
 }
-// clear storage
-sessionStorage.clear();
