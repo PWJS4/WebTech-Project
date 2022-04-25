@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=chrome" />
+		<title>DinoQuiz</title>
+		<link rel="stylesheet" href="../styling/styling.css" />
+		<link href="https://fonts.googleapis.com/css?family=Bahiana|Barrio" rel="stylesheet">
+	</head>
+	<body>
+		<div class="topbox">
+			<div class="header_text"> <h1> WELCOME TO THE <span id="header">DINO-QUIZ!</h1> </div>
+		</div>
+		<div class="mainbox">
+			<div class="leftbox">
+				<div class="dino"> <img id="dino_img" src="../images/dino.jpg"</img> </div>
+				<div><h2> Hello! I'm Rex. I need your help to win the quiz!</h2></div>
+			</div>
+			<div class="option_menu"> 
+				<div><h2> What is your name?</h2></div>
+				<input type="text" placeholder="Type your name here..." id="userName" style="width: 250px; height: 40px;">	
+				<div class="header_text"> <h2> Press start to begin...</h2> </div>			
+				<button class="button" onclick="saveUserName();">START QUIZ</button>
+				<!-- <a class="button" href="dino_quiz.html" onclick="saveUserName();">START QUIZ</a> -->
+				<div class="header_text"><h2> Or check out the rules</h2></div>			
+				<a class="button" href="rules.html">RULES</a>
+			</div>
+			<div class="rightbox">
+				<div class="dino"> <img id="dino_img2" src="../images/dino2.jpg"</img> </div>
+				<div><h2> And I'm Chopper. See if you can beat me!</h2></div>
+			</div>
+		</div>
+		<script>
+			function saveUserName () {
+				var userName = document.getElementById("userName").value;
+				//If username was entered
+				if(userName.length != 0){
+					//save username 
+					sessionStorage.setItem("userName", userName);
+					//navigate to quiz page
+					window.location.assign("dino_quiz.html");
+				} else{
+					alert("Please Enter a Name!")
+				}
+			}
+		</script>
+	</body>
+</html>

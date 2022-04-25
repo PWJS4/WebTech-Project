@@ -1,0 +1,189 @@
+:root {
+	font-size: 62.5%;
+	}
+
+* {
+	box-sizing: border-box;
+	font-family: "Bahiana";
+}
+
+
+/* Elements */
+
+
+h1 {
+	display: flex;
+	flex-direction: column;
+	font-size: 4rem;
+	color: #e82626;
+	}
+
+h2 {
+	display: flex;
+	flex-direction: column;
+	font-size: 3rem;
+	}
+
+
+#home {
+	height: 7rem;
+	float: left;
+    cursor: pointer;
+	}
+
+#header {
+	font-family: "Barrio";
+	font-size: 8rem;
+	}
+
+#question {
+	height: 7rem;
+	float: right;
+	cursor: pointer;
+	}
+
+#dino_img {
+	height: 40rem;
+	float: left;
+	}
+
+#dino_img2 {
+	height: 40rem;
+	float: right;
+	}
+
+#bar {
+	float: center;
+	width: 50rem;
+	height: 5rem;
+	border: 0.4rem solid #7FFF00;
+}
+
+#bar_level {
+	height: 4.2rem;
+	width: 50%;
+	background-color: #7FFF00;
+}
+
+#user_score {
+	text-align: center;
+	font-size: 10rem;
+	color: #7FFF00;
+}
+
+#chopper_score {
+	text-align: center;
+	font-size: 10rem;
+	color: #F08080;
+}
+
+/* Classes */
+
+
+.topbox {
+	display: flex;
+	justify-content: center;
+	align-items: start;
+	}
+
+.topbox_item {
+	height: 10rem;
+	width: 40rem;
+	}
+
+.header_text {
+	flex-grow: 1;
+	text-align: center;
+	}
+
+.mainbox {
+	display: flex;
+	justify-content: center;
+	align-items: start;
+	}
+	
+.leftbox {
+	display: flex;
+	flex-flow: column;
+}
+
+.rightbox {
+	display: flex;
+	flex-flow: column;
+}
+
+.dino {
+	width: 40rem;
+	}
+
+.option_menu {
+	font-family: "Bahiana",sans-serif;
+	font-size: 2rem;
+	text-align: center;
+	width: 50rem;
+	}
+
+.button {
+  background-color: rgb(255, 208, 0);
+  color: rgb(216, 80, 1);
+  border-radius: 0.3rem;
+  padding: 2rem;
+  cursor: pointer;
+  margin-bottom: 2rem;
+  outline: groove;
+  margin-top: 2rem;
+  font-family: "Barrio";
+  flex-direction: column;
+}
+
+.button:hover {
+	transform-origin: bottom;
+	transform: scaleY(0.95) translateY(0.14rem);
+}
+
+.button:active {
+	transform-origin: bottom;
+	transform: scaleY(0.85) translateY(0.12rem);
+}
+
+.quiz_box {
+    display: flex;
+	width: 100%;
+	outline: groove;
+	background-color: rgb(255,208,0);
+	color: rgb(216,80,1);
+	border-radius: 0.3rem;
+	margin-bottom: 2rem;
+	}
+
+.quiz_box:hover {
+	transform-origin: bottom;
+	transform: scaleY(0.95) translateY(0.14rem);
+}
+
+.quiz_box:active {
+	transform-origin: bottom;
+	transform: scaleY(0.85) translateY(0.12rem);
+}
+
+.option {
+	padding: 1.5rem 2rem;
+	background-color: red;
+	color: white;
+	font-size: 3rem;
+	}
+
+.option_text {
+  padding: 2rem 0.5rem;
+  width: 100%;
+  font-weight: bold;
+  font-size: 3rem;
+	}
+	
+.right {
+	background-color: #7FFF00;
+	}
+
+.wrong {
+	background-color: #F08080;
+}

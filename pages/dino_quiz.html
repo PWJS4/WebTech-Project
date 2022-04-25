@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=chrome" />
+		<title>DinoQuiz</title>
+		<link rel="stylesheet" href="../styling/styling.css" />
+		<link href="https://fonts.googleapis.com/css?family=Bahiana|Barrio" rel="stylesheet">
+	</head>
+	<body>
+		<div class="topbox">
+			<a class="topbox_item" href="dino_main.html"> <img id="home" src="../images/home.jpg"</img> </a>
+			<div class="header_text"> <h1 id="userName">Help Rex beat Chopper in the Quiz!</h1></div>
+			<div class="topbox_item"> <img id="question" src="../images/question.png"></div>
+		</div>
+		<div class="mainbox">
+			<div class="leftbox">
+				<div class="dino"> <img id="dino_img" src="../images/dino.jpg"</img> </div>
+				<p id="user_score">0</p>
+			</div>
+			<div class="option_menu">
+				<div class="header_text"> <h2 id="Q"> How high can you score?</h2> </div>
+					<div class="quiz_box">
+							<p class="option">A</p>
+							<p class="option_text" data-tag="1">Option 1</p>
+					</div>
+					<div class="quiz_box">
+							<p class="option">B</p>
+							<p class="option_text" data-tag="2">Option 2</p>
+					</div>
+					<div class="quiz_box">
+							<p class="option">C</p>
+							<p class="option_text" data-tag="3">Option 3</p>
+					</div>
+				<div>
+					<div id="bar">
+						<div id="bar_level"></div>
+					</div>
+				</div>
+			</div>
+			<div class="rightbox">
+				<div class="dino"> <img id="dino_img2" src="../images/dino2.jpg"</img> </div>
+				<p id="chopper_score">0</p>
+			</div>
+		</div>
+		<script type="text/javascript" src="../models/question.js"></script>
+		<script type="text/javascript" src="../data/questionsData.js"></script>
+		<script type="text/javascript" src="../js/game.js"></script>
+	</body>
+</html>
