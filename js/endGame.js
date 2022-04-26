@@ -14,19 +14,19 @@ score_result = sessionStorage.getItem("scoreLevel");
 score_result_text.innerText = user_result + " - " + chopper_result;
 
 // change element colour depending on result
-if(user_result > chopper_result || score_result == 10){
+if(score_result > 5){
     // if win
     text.innerText = "CONGRATULATIONS \n YOU WON!";
     rex_text.innerText = "Woohoo! We won! I couldn't have done it without you. Thanks friend!";
     chopper_text.innerText = "Well done, you beat me in the quiz! Want to play another round?"; 
     $('#user_score').css('color', 'green');
-} else if (user_result == chopper_result || score_result == 5) {
+} else if (score_result == 5) {
     // if draw
     text.innerText = "It's a DRAW!";
     rex_text.innerText = "Good effort! But we can beat him next time!";
     chopper_text.innerText = " It was 2 against 1 and I still drew. HAHA!"; 
     $("#user_score").css("color", "orange");
-}else if (user_result < chopper_result || score_result == 0){
+}else if (score_result < 5){
     // if lose
     text.innerText = "UNLUCKY. YOU LOST!";
     rex_text.innerText = "Aww Chopper beat us. Don't worry, we'll beat him next time!";
